@@ -1,0 +1,12 @@
+{
+  "ID": "427af2d93887868f8179665uy661c6c3",
+  "ActionKeyword": "vercel",
+  "Name": "Vercel",
+  "Description": "View your Vercel projects and deployments.",
+  "Author": "Guilherme S. Sousa (@krteazy)",
+  "Version": "1.0.0",
+  "Language": "executable",
+  "Website": "https://github.com/guilherssousa/flow-launcher-vercel-plugin",
+  "ExecuteFileName": "run.bat",
+  "IcoPath": "icon.png"
+}
