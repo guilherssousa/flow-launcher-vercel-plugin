@@ -13,6 +13,7 @@ on("query", async (params) => {
     return showResult({
       title: "Authentication required to search the Vercel API.",
       subtitle: "Click to authenticate.",
+      iconPath: "icon.png",
     });
   }
 
