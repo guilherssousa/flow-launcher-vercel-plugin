@@ -6,7 +6,7 @@ import { api, getProjects } from "./api.js";
 
 const store = securityStore();
 
-type Methods = "get_access_token" | "open_url" | "deployments";
+type Methods = "get_access_token" | "open_url" | "show_deployments";
 
 const { showResult, on, run } = new Flow<Methods>("icon.png");
 
@@ -35,7 +35,7 @@ on("query", async (params) => {
 
       projects.push({
         title: project.name,
-        subtitle: project.framework,
+        subtitle: `Framework: ${project.framework}`,
         method: "open_url",
         params: [dashboardLink],
       });
@@ -52,11 +52,6 @@ on("query", async (params) => {
   }
 });
 
-on("open_url", (params) => {
-  const url = params.toString();
-  open(url);
-});
-
 on("get_access_token", async (params) => {
   const accessToken = params.toString();
 
@@ -67,6 +62,11 @@ on("get_access_token", async (params) => {
 
   store.accessToken = accessToken;
   api.defaults.headers.common["Authorization"] = `Bearer ${accessToken}`;
+});
+
+on("open_url", (params) => {
+  const url = params.toString();
+  open(url);
 });
 
 run();

@@ -21,4 +21,15 @@ async function getProjects(search: string) {
   return data;
 }
 
+async function getDeploymentsByProject(projectId: string) {
+  const { data } = await api.get<GetProjectsResponse>(`v6/deployments`, {
+    params: {
+      limit: 20,
+      projectId,
+    },
+  });
+
+  return data;
+}
+
 export { api, getProjects };

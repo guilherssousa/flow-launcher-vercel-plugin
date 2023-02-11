@@ -3,6 +3,7 @@ export interface GetProjectsResponse {
 }
 
 export interface Project {
+  id: string;
   name: string;
   framework: string;
   latestDeployments: LatestDeployment[];
