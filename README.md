@@ -2,8 +2,6 @@
 
 This plugin allows you to search for projects and deployments. I's based on Vercel Raycast Extension.
 
-## Requirements
+## Installation
 
-To run this plugin you need to have Node.js installed. You can download a portable zip version of Node.js at https://nodejs.org/en/download/current/, then set the path to the portable Node.js in node.bat
-
-The modules used in this plugin are kept in the node_modules folder.
+This plugin can be found in Flow Launcher's plugin store, or alternatively from Flow type `pm install Vercel`
