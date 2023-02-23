@@ -4,9 +4,9 @@
   "Name": "Vercel",
   "Description": "View your Vercel projects and deployments.",
   "Author": "Guilherme S. Sousa (@krteazy)",
-  "Version": "1.0.0",
-  "Language": "executable",
+  "Version": "1.0.1",
+  "Language": "typescript",
   "Website": "https://github.com/guilherssousa/flow-launcher-vercel-plugin",
-  "ExecuteFileName": "run.bat",
+  "ExecuteFileName": "./build/index.js",
   "IcoPath": "icon.png"
 }
